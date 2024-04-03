@@ -27,9 +27,10 @@ $page->text()->bt()
 
 - [x] Fixes double quotes: `""` → `“”` (localized)
 - [x] Fixes single quotes: `''` → `‘’` (localized)
+- [x] Fixes guillemets facing the wrong direction: `« … »` → `» … «` (German)
 - [x] Fixes apostrophes: `'` → `’`
 - [x] Fixes hyphens that are used as en dashes: `… - …` → `… – …`
-- [x] Replaces `X`/`x` with correct multiplication sign: `×`
+- [x] Fixes wrong multiplication signs: `X`/`x` → `×`
 
 ## To Do
 
