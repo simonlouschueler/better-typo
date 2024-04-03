@@ -31,15 +31,16 @@ $page->text()->bt()
 - [x] Fixes apostrophes: `'` → `’`
 - [x] Fixes hyphens that are used as en dashes: `… - …` → `… – …`
 - [x] Fixes wrong multiplication signs: `X`/`x` → `×`
+- [x] Adds thin space between number and unit: `1m`/`1 m` → `1 m`
 
 ## To Do
 
 - [ ] Handle special cases like ’90s, ’Twas, Rock ’n’ Roll, etc.
 - [ ] If there is only one dumb single quote in a string, it’s probably an apostrophe
 - [ ] Track open/closed state while iterating over the text to make more informed decisions
-- [ ] Add thin spaces or even non-breaking thin spaces between value and unit (e.g. 1 m)
 - [ ] Handle double primes for inch
 - [ ] Hair spaces before and after `/`
+- [ ] Add non-breaking spaces
 
 ## Credits
 

@@ -28,6 +28,11 @@ Kirby::plugin('simonlou/better-typo', [
             // Multiplication sign
             $text = preg_replace('/(?<=\d)[Xx]|[Xx](?=\d)/u', '×', $text);
 
+            // Space before units
+            $pattern = '/(\d(?:\.\d+)?)(\s?)(m|km|cm|mm|kg|g|mg|s|min|h|°C|K|L|mL|m³|km²|ha|J|kWh)(?![\d\w])/';
+            $replacement = '$1 $3';                                         
+            $text = preg_replace($pattern, $replacement, $text);
+
             return new Field($field->parent(), $field->key(), $text);
         },
         'bt' => function ($field) {
