@@ -1,11 +1,11 @@
 ## Better Typo
-*Better Typography for your Kirby Site*
+*Better Typography for your Kirby Site*
 
-“Better Typo” is a Kirby plugin tailored for enhancing typography especially for client-submitted content. It automatically transforms [dumb quotes](https://smartquotesforsmartpeople.com/) (`""`/`''`) into smart quotes, straight apostrophes (`'`) into their curved equivalents and lots more. Automation in typography ensures consistency and professionalism without requiring manual intervention from designers.
+“Better Typo” is a Kirby plugin tailored for enhancing typography especially for client-submitted content. It automatically transforms [dumb quotes](https://smartquotesforsmartpeople.com/) (`""`/`''`) into smart quotes, straight apostrophes (`'`) into their curved equivalents and lots more. Automation in typography ensures consistency and professionalism without requiring manual intervention from designers.
 
 ## Installation
 
-Simply put the `better-typo-en` or the `better-typo-de` (depending on the language you want to correct) inside you `site/plugins` folder.
+Simply put the `better-typo` folder inside you `site/plugins` folder.
 
 ## How to Use
 
@@ -21,6 +21,17 @@ or
 
 ```php
 $page->text()->bt()
+```
+
+## Language Configuration
+
+“Better Typo” is currently available for English and German. In your `site/config/config.php` file you can specify which language you want to use (`en` or `de`). English is the default if you don’t add anything in your config.
+It's really important to choose the right language because the corrections are different.
+
+```php
+return [
+    'simonlou.better-typo.language' => 'de',
+];
 ```
 
 ## Features
@@ -46,8 +57,8 @@ $page->text()->bt()
 
 “Better Typo” is developed by [Simon Lou](https://simonlou.com) ([@simonlou@typo.social](https://typo.social/@simonlou)).
 
-Thanks to [Frank Rausch](https://frankrausch.com) ([@frankrausch@mastodon.social](https://mastodon.social/@frankrausch) for the inspiration, he did a similar project for swift a few years back.
+Thanks to [Frank Rausch](https://frankrausch.com) ([@frankrausch@mastodon.social](https://mastodon.social/@frankrausch) for the inspiration, he did a similar project for swift a few years back.
 
 ## License
 
-The “Better Typo” source code is released under the MIT License. Please view the LICENSE file for details.
+The “Better Typo” source code is released under the MIT License. Please view the LICENSE file for details.
