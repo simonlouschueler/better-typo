@@ -39,6 +39,7 @@ $page->text()->bt()
 - [ ] Track open/closed state while iterating over the text to make more informed decisions
 - [ ] Add thin spaces or even non-breaking thin spaces between value and unit (e.g. 1 m)
 - [ ] Handle double primes for inch
+- [ ] Hair spaces before and after `/`
 
 ## Credits
 
