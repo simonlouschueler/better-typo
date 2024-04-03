@@ -32,6 +32,7 @@ $page->text()->bt()
 - [x] Fixes hyphens that are used as en dashes: `… - …` → `… – …`
 - [x] Fixes wrong multiplication signs: `X`/`x` → `×`
 - [x] Adds thin space between number and unit: `1m`/`1 m` → `1 m`
+- [x] Adds thin spaces before and after slash: `/`/` / ` → ` / `
 
 ## To Do
 
@@ -39,7 +40,6 @@ $page->text()->bt()
 - [ ] If there is only one dumb single quote in a string, it’s probably an apostrophe
 - [ ] Track open/closed state while iterating over the text to make more informed decisions
 - [ ] Handle double primes for inch
-- [ ] Hair spaces before and after `/`
 - [ ] Add non-breaking spaces
 
 ## Credits

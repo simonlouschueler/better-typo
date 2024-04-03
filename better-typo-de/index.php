@@ -43,6 +43,11 @@ Kirby::plugin('simonlou/better-typo-de', [
                 $replacement = '$1&thinsp;$3';                                         
                 $segment = preg_replace($pattern, $replacement, $segment);
 
+                // Spaces around Slash
+                $segment = str_replace(' / ', '<<slash>>', $segment);
+                $segment = str_replace('/', '&thinsp;/&thinsp;', $segment);
+                $segment = str_replace('<<slash>>', '&thinsp;/&thinsp;', $segment);
+
                 return $segment;
             };
 
