@@ -25,6 +25,9 @@ Kirby::plugin('simonlou/better-typo', [
             // Closing guillemets
             $text = preg_replace('/[»](?=\s|[.,!?;:]|\s*$|<\/p>|<br>)/u', '«', $text);
 
+            // Multiplication sign
+            $text = preg_replace('/(?<=\d)[Xx]|[Xx](?=\d)/u', '×', $text);
+
             return new Field($field->parent(), $field->key(), $text);
         },
         'bt' => function ($field) {

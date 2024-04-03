@@ -29,6 +29,7 @@ $page->text()->bt()
 - [x] Fixes single quotes: `''` → `‘’` (localized)
 - [x] Fixes apostrophes: `'` → `’`
 - [x] Fixes hyphens that are used as en dashes: `… - …` → `… – …`
+- [x] Replaces `X`/`x` with correct multiplication sign: `×`
 
 ## To Do
 
@@ -37,7 +38,6 @@ $page->text()->bt()
 - [ ] Track open/closed state while iterating over the text to make more informed decisions
 - [ ] Add thin spaces or even non-breaking thin spaces between value and unit (e.g. 1 m)
 - [ ] Handle double primes for inch
-- [ ] Replace X with correct multiplication sign
 
 ## Credits
 

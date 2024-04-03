@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 Kirby::plugin('simonlou/better-typo', [
     'fieldMethods' => [
@@ -19,6 +19,9 @@ Kirby::plugin('simonlou/better-typo', [
             $text = preg_replace('/(?<=^|\s|>|\n|\r)[\'’‚]/u', '‘', $text);
             // Single closing quote
             $text = preg_replace('/[\'‘‚](?=\s|[.,!?;:]|\s*$|<\/p>|<br>)/u', '’', $text);
+
+            // Multiplication sign
+            $text = preg_replace('/(?<=\d)[Xx]|[Xx](?=\d)/u', '×', $text);
 
             return new Field($field->parent(), $field->key(), $text);
         },
