@@ -5,7 +5,7 @@
 
 ## Installation
 
-Simply put the `better-typo` folder inside you `site/plugins` folder.
+Simply put the `better-typo` folder inside your `site/plugins` folder.
 
 ## How to Use
 
