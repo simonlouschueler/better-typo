@@ -37,6 +37,9 @@ Kirby::plugin('simonlou/better-typo', [
                 $segment = str_replace('/', '&thinsp;/&thinsp;', $segment);
                 $segment = str_replace('<<slash>>', '&thinsp;/&thinsp;', $segment);
 
+                // Ellipsis
+                $segment = str_replace('...', '…', $segment);
+
                 // Replacements for different languages
                 $replacements = [
                     'en' => function ($segment) {

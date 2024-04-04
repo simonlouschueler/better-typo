@@ -44,6 +44,7 @@ return [
 - [x] Fixes wrong multiplication signs: `X`/`x` → `×`
 - [x] Adds thin space between number and unit: `1m`/`1 m` → `1 m`
 - [x] Adds thin spaces before and after slash: `/`/` / ` → ` / `
+- [x] Fixes ellipsis: `...` → `‌…`
 
 ## To Do
 
