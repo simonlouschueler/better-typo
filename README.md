@@ -5,7 +5,13 @@
 
 ## Installation
 
-Simply put the `better-typo` folder inside your `site/plugins` folder.
+The first option is to simply drag the `better-typo` folder inside your `site/plugins` folder.
+
+The second option is to install “Better Typo” directly through the command line via Composer:
+
+```terminal
+composer require simonlou/better-typo
+```
 
 ## How to Use
 
