@@ -1,0 +1,21 @@
+{
+    "name": "simonlou/better-typo",
+    "description": "Fix wrong quotation marks, apostrophes and hyphens in Kirby",
+    "type": "kirby-plugin",
+    "version": "1.0.0-beta2",
+    "require": {
+        "getkirby/cms": "^3.0"
+    },
+    "authors": [
+        {
+            "name": "Simon Lou",
+            "email": "mail@simonlou.com"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "simonlou\\better-typo\\": "src/"
+        }
+    }
+}
