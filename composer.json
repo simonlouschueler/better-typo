@@ -1,6 +1,7 @@
 {
     "name": "simonlou/better-typo",
     "description": "Fix wrong quotation marks, apostrophes and hyphens in Kirby",
+    "homepage": "https://github.com/simonlouschueler/better-typo",
     "type": "kirby-plugin",
     "version": "1.0.0-beta2",
     "require": {
