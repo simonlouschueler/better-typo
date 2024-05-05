@@ -59,9 +59,9 @@ Kirby::plugin('simonlou/better-typo', [
                     'de' => function ($segment) {
 
                         // Double opening quote
-                        $segment = preg_replace('/(?<=^|\s|>|\n|\r)["”„]/u', '„', $segment);
+                        $segment = preg_replace('/(?<=^|\s|>|\n|\r)["”“]/u', '„', $segment);
                         // Double closing quote
-                        $segment = preg_replace('/["“„](?=\s|[.,!?;:]|\s*$|<\/p>|<br>)/u', '“', $segment);
+                        $segment = preg_replace('/["”„](?=\s|[.,!?;:]|\s*$|<\/p>|<br>)/u', '“', $segment);
 
                         // Single opening quote
                         $segment = preg_replace('/(?<=^|\s|>|\n|\r)[\'’‚]/u', '‚', $segment);
